@@ -1,0 +1,87 @@
+.team {
+    padding: 110px 0px;
+    @media (max-width: $tablet) {
+        padding: 59px 0px;
+    }
+    background-color: #b7adda;
+
+    &__container {
+        max-width: 1170px;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+        margin-left: 100px;
+        @media (max-width: $tablet) {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.member {
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__img {
+        img {
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        @media (max-width: $tablet) {
+            width: 250px;
+        }
+        @media (max-width: $mobile) {
+            width: 210px;
+        }
+        @media (max-width: $mobileSmall) {
+            width: 190px;
+        }
+    }
+
+    &__title {
+        margin-top: 12px;
+        font-family: "Oswald";
+        font-weight: 700;
+        font-size: 28px;
+        color: #2f4454;
+        text-align: center;
+        @media (max-width: $tablet) {
+            font-size: 25px;
+        }
+    }
+    &__subtitle {
+        margin-top: 19px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #592f80;
+        text-align: center;
+        @media (max-width: $tablet) {
+            font-size: 18px;
+        }
+    }
+}
+
+.swiper {
+    padding-bottom: 70px;
+
+    @media (max-width: $mobile) {
+        padding-bottom: 50px;
+    }
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-pagination-bullet {
+    background-color: #2f4454;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #e7eb90;
+}

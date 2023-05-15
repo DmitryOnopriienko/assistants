@@ -1,0 +1,31 @@
+.title {
+    font-size: 64px;
+    color: #662e9b;
+    display: inline-block;
+    font-weight: 700;
+    border-bottom: 5px solid #e7eb90;
+    @media (max-width: $mobile) {
+        font-size: 40px;
+    }
+}
+
+.link {
+    margin: 0 auto;
+    display: inline-block;
+    width: 350px;
+    height: 120px;
+    background: #592f80;
+    border-radius: 60px;
+    color: #e7eb90;
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $mobile) {
+        width: 190px;
+        height: 65px;
+        font-size: 20px;
+    }
+}

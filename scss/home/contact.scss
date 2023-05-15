@@ -1,0 +1,17 @@
+.contact {
+    padding: 60px 0px 90px 0px;
+    background: #e7eb90;
+    @media (max-width: $mobile) {
+        padding: 50px 0px 60px 0px;
+    }
+    text-align: center;
+
+    &__title {
+        border-bottom-color: #22aaa1;
+        margin-bottom: 67px;
+        @media (max-width: $mobile) {
+            font-size: 25px;
+            margin-bottom: 36px;
+        }
+    }
+}

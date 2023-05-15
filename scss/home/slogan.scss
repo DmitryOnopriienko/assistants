@@ -1,0 +1,40 @@
+.slogan {
+    min-height: 100vh;
+    background-image: url("../img/mainBg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background-color: #2f4454;
+        padding: 10px;
+        width: 67%;
+        justify-content: flex-end;
+
+        @media (max-width: $tablet) {
+            width: 90%;
+        }
+        h1 {
+            font-size: 75px;
+            font-weight: 700;
+            font-family: "Oswald";
+            text-align: end;
+            @media (max-width: $mobile) {
+                font-size: 50px;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 36px;
+            color: #b7adda;
+            text-align: end;
+            @media (max-width: $mobile) {
+                font-size: 16px;
+            }
+        }
+    }
+}

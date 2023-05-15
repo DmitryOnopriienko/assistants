@@ -1,0 +1,93 @@
+.help {
+    background-image: url("../img/helpBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 96px 0px 150px 0px;
+    @media (max-width: $mobile) {
+        padding: 63px 0px;
+    }
+    &__title {
+        background-color: #b7adda;
+        padding: 10px;
+        width: 67%;
+        justify-content: flex-end;
+        text-align: end;
+        h2 {
+            @media (max-width: $mobileSmall) {
+                font-size: 31px;
+            }
+        }
+
+        @media (max-width: $tablet) {
+            width: 90%;
+        }
+    }
+
+    &__container {
+        max-width: 1280px;
+        padding: 0px 15px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 36px;
+        gap: 20px;
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.item {
+    flex: 0 1 33.333%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #22aaa1;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    @media (max-width: $mobile) {
+        flex: 1 1 auto;
+    }
+
+    &__icon {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: #b7adda;
+        border: 2px solid #2f4454;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: $tablet) {
+            height: 90px;
+            width: 90px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        font-family: "Oswald";
+        color: #ffffff;
+        @media (max-width: $tablet) {
+            font-size: 24px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        color: #2f4454;
+        font-size: 22px;
+        @media (max-width: $tablet) {
+            font-size: 18px;
+        }
+    }
+}

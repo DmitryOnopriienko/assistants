@@ -1,0 +1,111 @@
+.info {
+    padding: 130px 0px 90px 0px;
+    position: relative;
+
+    @media (max-width: $mobile) {
+        padding: 130px 0px 50px 0px;
+    }
+
+    &__container {
+        max-width: 900px;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+
+    &__link {
+        color: #22aaa1;
+        font-weight: 700;
+        font-size: 20px;
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        &::before {
+            content: url("../img/backArrow.svg");
+        }
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        color: #2f4454;
+        margin-bottom: 11px;
+    }
+
+    &__desc {
+        font-weight: 700;
+        font-size: 28px;
+        color: #2f4454;
+        margin-top: 29px;
+        margin-bottom: 30px;
+        @media (max-width: $mobile) {
+            font-size: 18px;
+        }
+    }
+
+    &__list {
+        li {
+            display: flex;
+            font-weight: 700;
+            font-size: 30px;
+            color: #592f80;
+            gap: 15px;
+            &::before {
+                content: "";
+                margin-top: 9px;
+                flex: 0 0 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #592f80;
+                @media (max-width: $mobile) {
+                    flex: 0 0 5px;
+                    height: 5px;
+                }
+            }
+            @media (max-width: $mobile) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 32px;
+        color: #2f4454;
+        margin-top: 55px;
+        span {
+            color: #22aaa1;
+        }
+        @media (max-width: $mobile) {
+            font-size: 20px;
+            margin-top: 25px;
+        }
+    }
+}
+
+.info__illustraion2 {
+    @media (min-width: 1300px) {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        z-index: 5;
+    }
+    @media (max-width: 1300px) {
+        margin-top: 20px;
+    }
+    @media (max-width: $mobile) {
+        width: 200px;
+    }
+}
+
+.info__illustraion1 {
+    display: none;
+
+    @media (min-width: 1300px) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        z-index: 5;
+    }
+}
